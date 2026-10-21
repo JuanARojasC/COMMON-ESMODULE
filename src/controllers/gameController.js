@@ -12,7 +12,6 @@ const getGame = (req, res) => {
     if (!game) {
         return res.status(404).json({ success: false, message: 'Juego no encontrado' });
     }
-    
     res.json({ success: true, data: game });
 };
 
